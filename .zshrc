@@ -1,7 +1,4 @@
-# Created by newuser for 5.9
-#
-# ~/.bashrc
-#
+#zsh config
 
 HISTFILE=~/.bash_history
 HISTSIZE=10000
@@ -14,7 +11,6 @@ source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-#default bash prompt -> PS1='[\u@\h \W]\$ '
 
 setopt PROMPT_SUBST
 
