@@ -32,6 +32,7 @@ greet() {
 PROMPT='• %F{$((1 + $RANDOM % 15))}$(bash $HOME/.dotfiles/kaomoji.sh -p=$HOME/.dotfiles/kaomoji.txt)%f ✿  %F{13}%f%K{13} %F{11} /%1~ %f%k$(git_branch)%F{9} >%f '
 
 greet
+panes
 
 #####################
 #      ALIAS        #
@@ -95,3 +96,6 @@ bindkey '^[[3~' delete-char             # Delete
 
 bindkey '^[[1;5C' forward-word          # Ctrl + Right
 bindkey '^[[1;5D' backward-word         # Ctrl + Left
+
+autoload -Uz select-word-style
+select-word-style bash
