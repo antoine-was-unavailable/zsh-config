@@ -29,7 +29,7 @@ greet() {
 
 #PS1='• \[\e[$((31 + $RANDOM % 7 + ( $RANDOM % 2 * 60 )))m\] $(bash $HOME/.dotfiles/kaomoji.sh -p=$HOME/.dotfiles/kaomoji.txt) \[\e[0m\]✿  \[\e[${FOLDER_PRE_BG}m\]\[\e[${FOLDER_BG}m\] \[\e[93m\] /%~$(git_branch)\[\e[91m\]>\[\e[0m\] '
 
-PROMPT='• %F{$((1 + $RANDOM % 15))}$(bash $HOME/.dotfiles/kaomoji.sh -p=$HOME/.dotfiles/kaomoji.txt)%f ✿  %F{13}%f%K{13} %F{11} /%1~ %f%k$(git_branch)%F{9}>%f '
+PROMPT='• %F{$((1 + $RANDOM % 15))}$(bash $HOME/.dotfiles/kaomoji.sh -p=$HOME/.dotfiles/kaomoji.txt)%f ✿  %F{13}%f%K{13} %F{11} /%1~ %f%k$(git_branch)%F{9} >%f '
 
 greet
 
