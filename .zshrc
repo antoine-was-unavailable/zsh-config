@@ -16,7 +16,7 @@ setopt PROMPT_SUBST
 
 git_branch() {
     if git branch 2> /dev/null | grep -q "*";then
-        echo "%F{12}%K{13}%k%f%K{12}%F{15}  $(git branch --show-current) %k%f%F{12}%f "
+        echo "%F{12}%K{13}%k%f%K{12}%F{15}  $(git branch --show-current) %k%f%F{12}%f"
     else
         echo "%F{13}%f"
     fi
