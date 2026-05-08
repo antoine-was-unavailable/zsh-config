@@ -41,6 +41,8 @@ greet
 #      ALIAS        #
 #####################
 
+alias history="cat -b ~/.bash_history"
+
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
