@@ -32,7 +32,6 @@ greet() {
 PROMPT='• %F{$((1 + $RANDOM % 15))}$(bash $HOME/.dotfiles/kaomoji.sh -p=$HOME/.dotfiles/kaomoji.txt)%f ✿  %F{13}%f%K{13} %F{11} /%1~ %f%k$(git_branch)%F{9} >%f '
 
 greet
-panes
 
 #####################
 #      ALIAS        #
@@ -43,14 +42,10 @@ alias history="cat -b ~/.bash_history"
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
-
-alias vencord='sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
-
 alias pomodoro='tclock -s 2 -c lightcyan timer -M -d'
 alias 5pomodoro='tclock -s 2 -c lightblue timer -d 5m -M'
 alias 10pomodoro='tclock -s 2 -c lightblue timer -d 10m -M'
 alias 45pomodoro='tclock -s 2 -c lightcyan timer -d 45m -M'
-alias nrestore='nitrogen --restore'
 alias ll='ls -a -l'
 alias youtube='mov-cli -s youtube'
 
@@ -74,16 +69,6 @@ alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 #      PATH         #
 #####################
 
-
-# Created by `pipx` on 2025-03-28 19:31:49
-export PATH="$PATH:/home/antoine/.local/bin"
-
-# Following line was automatically added by arttime installer
-export MANPATH=/home/antoine/.local/share/man:$MANPATH
-
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - bash)"
 
 
 ###################
